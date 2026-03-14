@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://drksqen6jrtkv"]
+[gd_scene format=4 uid="uid://drksqen6jrtkv"]
 
 [ext_resource type="Script" uid="uid://bsvtpo3gljeb8" path="res://environment/plataform.gd" id="1_3nhen"]
+[ext_resource type="Texture2D" uid="uid://4tngwtitxr8p" path="res://assets/blacknwhite_p=1_s=2.png" id="3_ag0mj"]
 [ext_resource type="Texture2D" uid="uid://5a60lddnje2k" path="res://assets/tiles and background_foreground (new)/tileset_32x32(new).png" id="3_oqgl4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dyou4"]
@@ -234,20 +235,114 @@ texture = ExtResource("3_oqgl4")
 10:11/0 = 0
 11:11/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_68oat"]
+texture = ExtResource("3_ag0mj")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_tjjr5"]
 sources/0 = SubResource("TileSetAtlasSource_dyou4")
+sources/1 = SubResource("TileSetAtlasSource_68oat")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3nhen"]
-size = Vector2(80, 16)
+size = Vector2(112, 13)
 
 [node name="Plataform5x" type="AnimatableBody2D" unique_id=896887307]
 script = ExtResource("1_3nhen")
 move_type = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1202001828]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0)
+tile_map_data = PackedByteArray("AAAAAAAAAQABAAAAAAABAAAAAQABAAAAAAACAAAAAQABAAAAAAADAAAAAQABAAAAAAAEAAAAAQADAAAAAAD//wAAAQABAAAAAAD+/wAAAQADAAEAAAA=")
 tile_set = SubResource("TileSet_tjjr5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366490683]
-position = Vector2(40, 8)
+position = Vector2(24, 6.5)
 shape = SubResource("RectangleShape2D_3nhen")
