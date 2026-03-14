@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dh4e85kc4osbf"]
+
+[ext_resource type="Script" uid="uid://x0gg3qc0lm5x" path="res://itens/item_life.gd" id="1_g0bga"]
+[ext_resource type="Texture2D" uid="uid://d2labjc0lpukq" path="res://assets/miscellaneous sprites/health_potion.png" id="1_lfb1r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g0bga"]
+size = Vector2(8, 10)
+
+[node name="ItemLife" type="Area2D" unique_id=2138640989]
+script = ExtResource("1_g0bga")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=902580108]
+texture = ExtResource("1_lfb1r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=665998375]
+shape = SubResource("RectangleShape2D_g0bga")

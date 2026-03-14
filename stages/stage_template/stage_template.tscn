@@ -1,19 +1,20 @@
-[gd_scene format=4 uid="uid://c1i32kg168y74"]
+[gd_scene format=4 uid="uid://g7a5wyam3b3b"]
 
-[ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_45pb0"]
-[ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_4j67g"]
-[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="3_6ytyu"]
-[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/ui_coin_counter.tscn" id="4_wy45p"]
-[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="4_xtff1"]
-[ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_wy45p"]
-[ext_resource type="PackedScene" uid="uid://cc6c2q21cmk73" path="res://UI/life_counter.tscn" id="5_ykeq0"]
-[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_ykeq0"]
-[ext_resource type="PackedScene" uid="uid://dijehclyrqasn" path="res://stages/stage_5/stage_5.tscn" id="7_4j67g"]
-[ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="7_rbv7h"]
-[ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_1mxwh"]
+[ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_yab40"]
+[ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_hwcrb"]
+[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="3_v27je"]
+[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/ui_coin_counter.tscn" id="4_5h2g3"]
+[ext_resource type="PackedScene" uid="uid://cc6c2q21cmk73" path="res://UI/life_counter.tscn" id="4_hlhlk"]
+[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="5_jr177"]
+[ext_resource type="PackedScene" uid="uid://dh4e85kc4osbf" path="res://itens/item_life.tscn" id="6_8k31j"]
+[ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="7_xj8ef"]
+[ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="8_ohds0"]
+[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="9_p6da7"]
+[ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="10_1qef7"]
+[ext_resource type="PackedScene" uid="uid://hjvxxiwtdmmp" path="res://environment/spike_plataform/spike_plataform.tscn" id="11_gaoe2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgayt"]
-texture = ExtResource("2_4j67g")
+texture = ExtResource("2_hwcrb")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -135,17 +136,17 @@ texture = ExtResource("2_4j67g")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_cgayt")
 
-[node name="Stage_4" type="Node2D" unique_id=124538361]
-script = ExtResource("1_45pb0")
+[node name="Stage_template" type="Node2D" unique_id=124538361]
+script = ExtResource("1_yab40")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1641037162]
 tile_map_data = PackedByteArray("AAAAABIAAAABAAAAAAABABIAAAABAAAAAAACABIAAAABAAAAAAADABIAAAABAAAAAAAEABIAAAABAAAAAAAFABIAAAABAAAAAAAGABIAAAABAAAAAAAHABIAAAABAAAAAAAIABIAAAABAAAAAAAJABIAAAABAAAAAAAKABIAAAABAAAAAAALABIAAAABAAAAAAAMABIAAAABAAAAAAANABIAAAABAAAAAAAOABIAAAABAAAAAAAPABIAAAABAAAAAAAQABIAAAABAAAAAAARABIAAAABAAAAAAASABIAAAABAAAAAAATABIAAAABAAAAAAAUABIAAAABAAAAAAAVABIAAAABAAAAAAAWABIAAAABAAAAAAAXABIAAAABAAAAAAAYABIAAAABAAAAAAAZABIAAAABAAAAAAAaABIAAAABAAAAAAAbABIAAAABAAAAAAAcABIAAAABAAAAAAAdABIAAAABAAAAAAAeABIAAAABAAAAAAAfABIAAAABAAAAAAAgABIAAAABAAAAAAAhABIAAAABAAAAAAAiABIAAAABAAAAAAAjABIAAAABAAAAAAAkABIAAAABAAAAAAAlABIAAAABAAAAAAAmABIAAAABAAAAAAAnABIAAAABAAAAAAAAABEAAAAJAAMAAAAAABAAAAAJAAMAAAAAAA8AAAAJAAMAAAAAAA4AAAAJAAMAAAAAAA0AAAAJAAMAAAAAAAwAAAAJAAMAAAAAAAsAAAAJAAMAAAAAAAoAAAAJAAMAAAAAAAkAAAAJAAMAAAAAAAgAAAAJAAMAAAAAAAcAAAAJAAMAAAAAAAYAAAAJAAMAAAAAAAUAAAAJAAMAAAAAAAQAAAAJAAMAAAAAAAMAAAAJAAMAAAAAAAIAAAAJAAMAAAAAAAEAAAAJAAMAAAAAAAAAAAAJAAMAAAABAAAAAAAJAAMAAAACAAAAAAAJAAMAAAADAAAAAAAJAAMAAAAEAAAAAAAJAAMAAAAFAAAAAAAJAAMAAAAGAAAAAAAJAAMAAAAHAAAAAAAJAAMAAAAIAAAAAAAJAAMAAAAJAAAAAAAJAAMAAAAKAAAAAAAJAAMAAAALAAAAAAAJAAMAAAAMAAAAAAAJAAMAAAANAAAAAAAJAAMAAAAOAAAAAAAJAAMAAAAPAAAAAAAJAAMAAAAQAAAAAAAJAAMAAAARAAAAAAAJAAMAAAASAAAAAAAJAAMAAAATAAAAAAAJAAMAAAAUAAAAAAAJAAMAAAAVAAAAAAAJAAMAAAAWAAAAAAAJAAMAAAAXAAAAAAAJAAMAAAAYAAAAAAAJAAMAAAAZAAAAAAAJAAMAAAAaAAAAAAAJAAMAAAAbAAAAAAAJAAMAAAAcAAAAAAAJAAMAAAAdAAAAAAAJAAMAAAAeAAAAAAAJAAMAAAAfAAAAAAAJAAMAAAAgAAAAAAAJAAMAAAAhAAAAAAAJAAMAAAAiAAAAAAAJAAMAAAAjAAAAAAAJAAMAAAAkAAAAAAAJAAMAAAAlAAAAAAAJAAMAAAAmAAAAAAAJAAMAAAAnAAAAAAAJAAMAAAAnAAEAAAAJAAMAAAAnAAIAAAAJAAMAAAAnAAMAAAAJAAMAAAAnAAQAAAAJAAMAAAAnAAUAAAAJAAMAAAAnAAYAAAAJAAMAAAAnAAcAAAAJAAMAAAAnAAgAAAAJAAMAAAAnAAkAAAAJAAMAAAAnAAoAAAAJAAMAAAAnAAsAAAAJAAMAAAAnAAwAAAAJAAMAAAAnAA0AAAAJAAMAAAAnAA4AAAAJAAMAAAAnAA8AAAAJAAMAAAAnABAAAAAJAAMAAAAnABEAAAAJAAMAAAA=")
 tile_set = SubResource("TileSet_7iwxo")
 
-[node name="Character" parent="." unique_id=1595900580 instance=ExtResource("3_6ytyu")]
+[node name="Character" parent="." unique_id=1595900580 instance=ExtResource("3_v27je")]
 position = Vector2(58, 276)
 
-[node name="UI" type="Control" parent="." unique_id=876390361]
+[node name="UI" type="Control" parent="." unique_id=862725961]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 642.0
@@ -153,7 +154,7 @@ offset_bottom = 288.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="UiCoinCounter" parent="UI" unique_id=1754579106 instance=ExtResource("4_wy45p")]
+[node name="UiCoinCounter" parent="UI" unique_id=1754579106 instance=ExtResource("4_5h2g3")]
 layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
@@ -167,7 +168,7 @@ grow_vertical = 1
 scale = Vector2(0.5, 0.5)
 size_flags_vertical = 3
 
-[node name="LifeCounter" parent="UI" unique_id=569572914 instance=ExtResource("5_ykeq0")]
+[node name="LifeCounter" parent="UI" unique_id=569572914 instance=ExtResource("4_hlhlk")]
 layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
@@ -181,7 +182,7 @@ grow_vertical = 1
 scale = Vector2(0.5, 0.5)
 size_flags_vertical = 3
 
-[node name="UiPressSpace" parent="UI" unique_id=479573559 instance=ExtResource("4_xtff1")]
+[node name="UiPressSpace" parent="UI" unique_id=479573559 instance=ExtResource("5_jr177")]
 visible = false
 layout_mode = 1
 offset_left = 13.0
@@ -194,22 +195,70 @@ metadata/_edit_use_anchors_ = true
 [node name="Music" type="Node" parent="." unique_id=921486686]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music" unique_id=1765072017]
-stream = ExtResource("5_wy45p")
+stream = ExtResource("7_xj8ef")
 autoplay = true
 
 [node name="Composition" type="Node2D" parent="." unique_id=1060332453]
 
-[node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("6_ykeq0")]
-position = Vector2(35, 276)
-next_stage = ExtResource("7_4j67g")
+[node name="Coin" parent="Composition" unique_id=547508149 instance=ExtResource("8_ohds0")]
+position = Vector2(193, 247)
 
-[node name="Coin5" parent="Composition" unique_id=1413662043 instance=ExtResource("7_rbv7h")]
-position = Vector2(407, 42)
+[node name="Coin2" parent="Composition" unique_id=1757091677 instance=ExtResource("8_ohds0")]
+position = Vector2(182, 257)
 
-[node name="Plataform5" parent="Composition" unique_id=879139560 instance=ExtResource("8_1mxwh")]
-position = Vector2(369, 81)
+[node name="Coin3" parent="Composition" unique_id=1936903952 instance=ExtResource("8_ohds0")]
+position = Vector2(171, 267)
+
+[node name="Coin4" parent="Composition" unique_id=625687654 instance=ExtResource("8_ohds0")]
+position = Vector2(291, 253)
+
+[node name="Coin5" parent="Composition" unique_id=807164284 instance=ExtResource("8_ohds0")]
+position = Vector2(304, 265)
+
+[node name="Coin6" parent="Composition" unique_id=385319662 instance=ExtResource("8_ohds0")]
+position = Vector2(264, 238)
+
+[node name="Coin7" parent="Composition" unique_id=1868294254 instance=ExtResource("8_ohds0")]
+position = Vector2(249, 236)
+
+[node name="Coin8" parent="Composition" unique_id=1177145708 instance=ExtResource("8_ohds0")]
+position = Vector2(277, 246)
+
+[node name="Coin9" parent="Composition" unique_id=509604403 instance=ExtResource("8_ohds0")]
+position = Vector2(208, 241)
+
+[node name="Coin10" parent="Composition" unique_id=670573723 instance=ExtResource("8_ohds0")]
+position = Vector2(221, 237)
+
+[node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("9_p6da7")]
+position = Vector2(559, 142)
+
+[node name="Plataform5" parent="Composition" unique_id=879139560 instance=ExtResource("10_1qef7")]
+position = Vector2(512, 211)
 move_type = 2
-range_distance = 50.0
+speed = 100.0
+range_distance = 60.0
 
-[node name="Plataform6" parent="Composition" unique_id=1631269976 instance=ExtResource("8_1mxwh")]
-position = Vector2(180, 205)
+[node name="SpikePlataform" parent="Composition" unique_id=1136465902 instance=ExtResource("11_gaoe2")]
+position = Vector2(208, 288)
+
+[node name="SpikePlataform2" parent="Composition" unique_id=1876752966 instance=ExtResource("11_gaoe2")]
+position = Vector2(291, 288)
+
+[node name="SpikePlataform3" parent="Composition" unique_id=1604606316 instance=ExtResource("11_gaoe2")]
+position = Vector2(277, 288)
+
+[node name="SpikePlataform4" parent="Composition" unique_id=785910285 instance=ExtResource("11_gaoe2")]
+position = Vector2(263, 288)
+
+[node name="SpikePlataform5" parent="Composition" unique_id=507201740 instance=ExtResource("11_gaoe2")]
+position = Vector2(250, 288)
+
+[node name="SpikePlataform6" parent="Composition" unique_id=1883451064 instance=ExtResource("11_gaoe2")]
+position = Vector2(236, 288)
+
+[node name="SpikePlataform7" parent="Composition" unique_id=1068409863 instance=ExtResource("11_gaoe2")]
+position = Vector2(222, 288)
+
+[node name="ItemLife" parent="Composition" unique_id=2138640989 instance=ExtResource("6_8k31j")]
+position = Vector2(91, 279)

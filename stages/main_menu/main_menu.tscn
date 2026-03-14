@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://70j62m53a3tn"]
+
+[ext_resource type="Script" uid="uid://cvaoxy2o4ulx8" path="res://stages/main_menu/main_menu.gd" id="1_phs36"]
+
+[node name="MainMenu" type="Control" unique_id=1466345366]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_phs36")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=335579578]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.5
+offset_top = -46.5
+offset_right = 108.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=280696844]
+layout_mode = 2
+text = "Game Jam Plataformer 2026"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1738547818]
+layout_mode = 2
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1664941809]
+layout_mode = 2
+text = "Credits"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

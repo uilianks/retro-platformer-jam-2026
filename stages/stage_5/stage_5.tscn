@@ -4,11 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_t5jgs"]
 [ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="3_wxd1x"]
 [ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="4_53d1l"]
+[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/ui_coin_counter.tscn" id="4_f688h"]
 [ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_sd0gw"]
 [ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_18t7o"]
+[ext_resource type="PackedScene" uid="uid://dh4e85kc4osbf" path="res://itens/item_life.tscn" id="6_f688h"]
 [ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="7_eu8gw"]
 [ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_8sa7w"]
 [ext_resource type="PackedScene" uid="uid://hjvxxiwtdmmp" path="res://environment/spike_plataform/spike_plataform.tscn" id="8_cvp0n"]
+[ext_resource type="PackedScene" uid="uid://cc6c2q21cmk73" path="res://UI/life_counter.tscn" id="10_73pfr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgayt"]
 texture = ExtResource("2_t5jgs")
@@ -143,11 +146,41 @@ tile_set = SubResource("TileSet_7iwxo")
 [node name="Character" parent="." unique_id=1595900580 instance=ExtResource("3_wxd1x")]
 position = Vector2(58, 276)
 
-[node name="UI" type="Control" parent="." unique_id=862725961]
+[node name="UI" type="Control" parent="." unique_id=2047957350]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 642.0
+offset_bottom = 288.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UiCoinCounter" parent="UI" unique_id=1754579106 instance=ExtResource("4_f688h")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 149.0
+offset_bottom = 54.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.5, 0.5)
+size_flags_vertical = 3
+
+[node name="LifeCounter" parent="UI" unique_id=569572914 instance=ExtResource("10_73pfr")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 9.0
+offset_top = 40.0
+offset_right = 651.0
+offset_bottom = 182.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.5, 0.5)
+size_flags_vertical = 3
 
 [node name="UiPressSpace" parent="UI" unique_id=479573559 instance=ExtResource("4_53d1l")]
 visible = false
@@ -226,3 +259,6 @@ position = Vector2(236, 288)
 
 [node name="SpikePlataform7" parent="Composition" unique_id=1068409863 instance=ExtResource("8_cvp0n")]
 position = Vector2(222, 288)
+
+[node name="ItemLife" parent="Composition" unique_id=2138640989 instance=ExtResource("6_f688h")]
+position = Vector2(109, 274)
