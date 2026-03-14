@@ -1,8 +1,8 @@
 extends Node
 
-@onready var door: Node = $Door
 @onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
 @onready var ui_press_space: Control = $UI/UiPressSpace
+@onready var door: Door = $Composition/Door
 
 func _ready() -> void:
 	BusSignals.collected.connect(_on_coin_collected)

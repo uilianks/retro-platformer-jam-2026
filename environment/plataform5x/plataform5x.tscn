@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://drksqen6jrtkv"]
 
-[ext_resource type="Script" uid="uid://bsvtpo3gljeb8" path="res://environment/plataform/plataform.gd" id="1_3nhen"]
+[ext_resource type="Script" uid="uid://bsvtpo3gljeb8" path="res://environment/plataform5x/plataform.gd" id="1_3nhen"]
 [ext_resource type="Texture2D" uid="uid://c2klo1u1slbu6" path="res://icon.svg" id="1_rpj7o"]
 [ext_resource type="Texture2D" uid="uid://5a60lddnje2k" path="res://assets/tiles and background_foreground (new)/tileset_32x32(new).png" id="3_oqgl4"]
 

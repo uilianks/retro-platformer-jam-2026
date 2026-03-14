@@ -1,15 +1,16 @@
-[gd_scene format=4 uid="uid://c0jt3es1vc1mu"]
+[gd_scene format=4 uid="uid://fy8tfhjykq87"]
 
-[ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_yor2l"]
-[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="2_40wcd"]
-[ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_531qe"]
-[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="7_wd8hm"]
-[ext_resource type="PackedScene" uid="uid://bc3ehwo2ydeqw" path="res://stages/stage_2/stage_2.tscn" id="8_0ymf2"]
-[ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="8_6oaam"]
-[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="12_7iwxo"]
+[ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_iv4m0"]
+[ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_n5fns"]
+[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="3_2h8lf"]
+[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="4_i47m7"]
+[ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_wsd1x"]
+[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_d7get"]
+[ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="7_233o8"]
+[ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_823gg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgayt"]
-texture = ExtResource("2_531qe")
+texture = ExtResource("2_n5fns")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -131,14 +132,14 @@ texture = ExtResource("2_531qe")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_cgayt")
 
-[node name="Stage_1" type="Node2D" unique_id=124538361]
-script = ExtResource("1_yor2l")
+[node name="Stage_3" type="Node2D" unique_id=124538361]
+script = ExtResource("1_iv4m0")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1641037162]
 tile_map_data = PackedByteArray("AAAAABIAAAABAAAAAAABABIAAAABAAAAAAACABIAAAABAAAAAAADABIAAAABAAAAAAAEABIAAAABAAAAAAAFABIAAAABAAAAAAAGABIAAAABAAAAAAAHABIAAAABAAAAAAAIABIAAAABAAAAAAAJABIAAAABAAAAAAAKABIAAAABAAAAAAALABIAAAABAAAAAAAMABIAAAABAAAAAAANABIAAAABAAAAAAAOABIAAAABAAAAAAAPABIAAAABAAAAAAAQABIAAAABAAAAAAARABIAAAABAAAAAAASABIAAAABAAAAAAATABIAAAABAAAAAAAUABIAAAABAAAAAAAVABIAAAABAAAAAAAWABIAAAABAAAAAAAXABIAAAABAAAAAAAYABIAAAABAAAAAAAZABIAAAABAAAAAAAaABIAAAABAAAAAAAbABIAAAABAAAAAAAcABIAAAABAAAAAAAdABIAAAABAAAAAAAeABIAAAABAAAAAAAfABIAAAABAAAAAAAgABIAAAABAAAAAAAhABIAAAABAAAAAAAiABIAAAABAAAAAAAjABIAAAABAAAAAAAkABIAAAABAAAAAAAlABIAAAABAAAAAAAmABIAAAABAAAAAAAnABIAAAABAAAAAAAAABEAAAAJAAMAAAAAABAAAAAJAAMAAAAAAA8AAAAJAAMAAAAAAA4AAAAJAAMAAAAAAA0AAAAJAAMAAAAAAAwAAAAJAAMAAAAAAAsAAAAJAAMAAAAAAAoAAAAJAAMAAAAAAAkAAAAJAAMAAAAAAAgAAAAJAAMAAAAAAAcAAAAJAAMAAAAAAAYAAAAJAAMAAAAAAAUAAAAJAAMAAAAAAAQAAAAJAAMAAAAAAAMAAAAJAAMAAAAAAAIAAAAJAAMAAAAAAAEAAAAJAAMAAAAAAAAAAAAJAAMAAAABAAAAAAAJAAMAAAACAAAAAAAJAAMAAAADAAAAAAAJAAMAAAAEAAAAAAAJAAMAAAAFAAAAAAAJAAMAAAAGAAAAAAAJAAMAAAAHAAAAAAAJAAMAAAAIAAAAAAAJAAMAAAAJAAAAAAAJAAMAAAAKAAAAAAAJAAMAAAALAAAAAAAJAAMAAAAMAAAAAAAJAAMAAAANAAAAAAAJAAMAAAAOAAAAAAAJAAMAAAAPAAAAAAAJAAMAAAAQAAAAAAAJAAMAAAARAAAAAAAJAAMAAAASAAAAAAAJAAMAAAATAAAAAAAJAAMAAAAUAAAAAAAJAAMAAAAVAAAAAAAJAAMAAAAWAAAAAAAJAAMAAAAXAAAAAAAJAAMAAAAYAAAAAAAJAAMAAAAZAAAAAAAJAAMAAAAaAAAAAAAJAAMAAAAbAAAAAAAJAAMAAAAcAAAAAAAJAAMAAAAdAAAAAAAJAAMAAAAeAAAAAAAJAAMAAAAfAAAAAAAJAAMAAAAgAAAAAAAJAAMAAAAhAAAAAAAJAAMAAAAiAAAAAAAJAAMAAAAjAAAAAAAJAAMAAAAkAAAAAAAJAAMAAAAlAAAAAAAJAAMAAAAmAAAAAAAJAAMAAAAnAAAAAAAJAAMAAAAnAAEAAAAJAAMAAAAnAAIAAAAJAAMAAAAnAAMAAAAJAAMAAAAnAAQAAAAJAAMAAAAnAAUAAAAJAAMAAAAnAAYAAAAJAAMAAAAnAAcAAAAJAAMAAAAnAAgAAAAJAAMAAAAnAAkAAAAJAAMAAAAnAAoAAAAJAAMAAAAnAAsAAAAJAAMAAAAnAAwAAAAJAAMAAAAnAA0AAAAJAAMAAAAnAA4AAAAJAAMAAAAnAA8AAAAJAAMAAAAnABAAAAAJAAMAAAAnABEAAAAJAAMAAAA=")
 tile_set = SubResource("TileSet_7iwxo")
 
-[node name="Character" parent="." unique_id=1595900580 instance=ExtResource("2_40wcd")]
+[node name="Character" parent="." unique_id=1595900580 instance=ExtResource("3_2h8lf")]
 position = Vector2(58, 276)
 
 [node name="UI" type="Control" parent="." unique_id=862725961]
@@ -147,7 +148,8 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="UiPressSpace" parent="UI" unique_id=479573559 instance=ExtResource("12_7iwxo")]
+[node name="UiPressSpace" parent="UI" unique_id=479573559 instance=ExtResource("4_i47m7")]
+visible = false
 layout_mode = 1
 offset_left = 13.0
 offset_top = 243.0
@@ -159,11 +161,52 @@ metadata/_edit_use_anchors_ = true
 [node name="Music" type="Node" parent="." unique_id=921486686]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music" unique_id=1765072017]
-stream = ExtResource("8_6oaam")
+stream = ExtResource("5_wsd1x")
 autoplay = true
 
 [node name="Composition" type="Node2D" parent="." unique_id=1060332453]
 
-[node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("7_wd8hm")]
-position = Vector2(523, 276)
-next_stage = ExtResource("8_0ymf2")
+[node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("6_d7get")]
+position = Vector2(207, 70)
+
+[node name="Coin" parent="Composition" unique_id=547508149 instance=ExtResource("7_233o8")]
+position = Vector2(464, 125)
+
+[node name="Coin2" parent="Composition" unique_id=1592202672 instance=ExtResource("7_233o8")]
+position = Vector2(137, 229)
+
+[node name="Coin3" parent="Composition" unique_id=164742108 instance=ExtResource("7_233o8")]
+position = Vector2(366, 158)
+
+[node name="Coin4" parent="Composition" unique_id=606590938 instance=ExtResource("7_233o8")]
+position = Vector2(253, 194)
+
+[node name="Coin5" parent="Composition" unique_id=1413662043 instance=ExtResource("7_233o8")]
+position = Vector2(365, 87)
+
+[node name="Coin6" parent="Composition" unique_id=736838624 instance=ExtResource("7_233o8")]
+position = Vector2(230, 71)
+
+[node name="Plataform" parent="Composition" unique_id=896887307 instance=ExtResource("8_823gg")]
+position = Vector2(102, 241)
+move_type = 0
+
+[node name="Plataform2" parent="Composition" unique_id=378967241 instance=ExtResource("8_823gg")]
+position = Vector2(215, 205)
+move_type = 0
+
+[node name="Plataform3" parent="Composition" unique_id=132344271 instance=ExtResource("8_823gg")]
+position = Vector2(327, 171)
+move_type = 0
+
+[node name="Plataform4" parent="Composition" unique_id=1306085975 instance=ExtResource("8_823gg")]
+position = Vector2(428, 141)
+move_type = 0
+
+[node name="Plataform5" parent="Composition" unique_id=879139560 instance=ExtResource("8_823gg")]
+position = Vector2(326, 95)
+move_type = 0
+
+[node name="Plataform6" parent="Composition" unique_id=1631269976 instance=ExtResource("8_823gg")]
+position = Vector2(192, 80)
+move_type = 0

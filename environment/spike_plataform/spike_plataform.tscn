@@ -15,7 +15,7 @@ sources/0 = SubResource("TileSetAtlasSource_ga3wf")
 size = Vector2(10, 11)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_52tox"]
-radius = 8.0
+radius = 7.0
 
 [node name="SpikePlataform" type="AnimatableBody2D" unique_id=1136465902]
 script = ExtResource("1_ga3wf")
@@ -33,5 +33,5 @@ shape = SubResource("RectangleShape2D_2f44p")
 script = ExtResource("3_2f44p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=142425273]
-position = Vector2(-8, -9)
+position = Vector2(-8, -8)
 shape = SubResource("CircleShape2D_52tox")
