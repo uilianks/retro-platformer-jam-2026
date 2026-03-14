@@ -2,16 +2,16 @@
 
 [ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_ckd3h"]
 [ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_t5jgs"]
-[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="3_wxd1x"]
-[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="4_53d1l"]
-[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/ui_coin_counter.tscn" id="4_f688h"]
+[ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/main_character/character.tscn" id="3_wxd1x"]
+[ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/space/ui_press_space.tscn" id="4_53d1l"]
+[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/coin_counter/ui_coin_counter.tscn" id="4_f688h"]
 [ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_sd0gw"]
-[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_18t7o"]
-[ext_resource type="PackedScene" uid="uid://dh4e85kc4osbf" path="res://itens/item_life.tscn" id="6_f688h"]
-[ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="7_eu8gw"]
+[ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://environment/door/door.tscn" id="6_18t7o"]
+[ext_resource type="PackedScene" uid="uid://dh4e85kc4osbf" path="res://itens/life_potion/item_life.tscn" id="6_f688h"]
+[ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://itens/coin/coin.tscn" id="7_eu8gw"]
 [ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_8sa7w"]
 [ext_resource type="PackedScene" uid="uid://hjvxxiwtdmmp" path="res://environment/spike_plataform/spike_plataform.tscn" id="8_cvp0n"]
-[ext_resource type="PackedScene" uid="uid://cc6c2q21cmk73" path="res://UI/life_counter.tscn" id="10_73pfr"]
+[ext_resource type="PackedScene" uid="uid://cc6c2q21cmk73" path="res://UI/life_counter/life_counter.tscn" id="10_73pfr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgayt"]
 texture = ExtResource("2_t5jgs")

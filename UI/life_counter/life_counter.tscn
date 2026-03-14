@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cc6c2q21cmk73"]
 
-[ext_resource type="Script" uid="uid://bdxd8spjtaby" path="res://UI/life_counter.gd" id="1_454hi"]
+[ext_resource type="Script" uid="uid://bdxd8spjtaby" path="res://UI/life_counter/life_counter.gd" id="1_454hi"]
 [ext_resource type="StyleBox" uid="uid://tcr0h7uixg6" path="res://assets/styles/theme_button.tres" id="1_re5dk"]
 [ext_resource type="Texture2D" uid="uid://b07u33o1eaf5i" path="res://assets/hud elements/hearts_hud.png" id="2_454hi"]
 

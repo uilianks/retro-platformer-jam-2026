@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dpsrdr4dtmf3p"]
 
-[ext_resource type="Script" uid="uid://60qfj08y5mh" path="res://UI/ui_coin_counter.gd" id="1_iwfwj"]
+[ext_resource type="Script" uid="uid://60qfj08y5mh" path="res://UI/coin_counter/ui_coin_counter.gd" id="1_iwfwj"]
 [ext_resource type="Texture2D" uid="uid://c00k7tgvoqg4x" path="res://assets/hud elements/coins_hud.png" id="1_ysuai"]
 [ext_resource type="StyleBox" uid="uid://tcr0h7uixg6" path="res://assets/styles/theme_button.tres" id="2_dqolc"]
 
