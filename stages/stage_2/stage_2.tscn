@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_y35lc"]
 [ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_jfjhe"]
 [ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/character.tscn" id="4_26fkx"]
+[ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/ui_coin_counter.tscn" id="4_sb4rn"]
 [ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/ui_press_space.tscn" id="4_wemh8"]
 [ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="5_7kxco"]
 [ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_kxhkr"]
@@ -157,6 +158,19 @@ offset_right = 13.0
 offset_bottom = 243.0
 scale = Vector2(0.5, 0.5)
 metadata/_edit_use_anchors_ = true
+
+[node name="UiCoinCounter" parent="UI" unique_id=1754579106 instance=ExtResource("4_sb4rn")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 23.0
+offset_bottom = 22.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.5, 0.5)
 
 [node name="Music" type="Node" parent="." unique_id=921486686]
 

@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_wsd1x"]
 [ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://door/door.tscn" id="6_d7get"]
 [ext_resource type="PackedScene" uid="uid://cf0tjplvtofbw" path="res://coin/coin.tscn" id="7_233o8"]
+[ext_resource type="PackedScene" uid="uid://c1i32kg168y74" path="res://stages/stage_4/stage_4.tscn" id="7_tdh1n"]
 [ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_823gg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgayt"]
@@ -168,6 +169,7 @@ autoplay = true
 
 [node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("6_d7get")]
 position = Vector2(207, 70)
+next_stage = ExtResource("7_tdh1n")
 
 [node name="Coin" parent="Composition" unique_id=547508149 instance=ExtResource("7_233o8")]
 position = Vector2(464, 125)
