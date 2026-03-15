@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://cikbu2e1cfwqp"]
+[gd_scene format=4 uid="uid://cikbu2e1cfwqp"]
 
 [ext_resource type="Script" uid="uid://bsvtpo3gljeb8" path="res://environment/plataform.gd" id="1_657c5"]
 [ext_resource type="Texture2D" uid="uid://5a60lddnje2k" path="res://assets/tiles and background_foreground (new)/tileset_32x32(new).png" id="2_dqnic"]
-[ext_resource type="Texture2D" uid="uid://4tngwtitxr8p" path="res://assets/blacknwhite_p=1_s=2.png" id="3_lsih1"]
+[ext_resource type="Texture2D" uid="uid://4tngwtitxr8p" path="res://assets/tiles and background_foreground (new)/blacknwhite_p=1_s=2.png" id="3_lsih1"]
+[ext_resource type="Texture2D" uid="uid://basfcboq7bnb0" path="res://assets/tiles and background_foreground (new)/Cloud Tileset.png" id="4_75bkx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dyou4"]
 texture = ExtResource("2_dqnic")
@@ -250,21 +251,58 @@ texture = ExtResource("3_lsih1")
 1:1/0 = 0
 2:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d30jy"]
+texture = ExtResource("4_75bkx")
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_tjjr5"]
 sources/0 = SubResource("TileSetAtlasSource_dyou4")
 sources/1 = SubResource("TileSetAtlasSource_75bkx")
+sources/2 = SubResource("TileSetAtlasSource_d30jy")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3nhen"]
-size = Vector2(65, 12)
+size = Vector2(65, 32)
 
 [node name="Plataform2x" type="AnimatableBody2D" unique_id=896887307]
 script = ExtResource("1_657c5")
 move_type = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1202001828]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 255, 255, 0, 0, 1, 0, 3, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 3, 0, 0, 0, 0, 0)
+tile_map_data = PackedByteArray("AAAAAAAAAgABAAQAAAABAAAAAgABAAQAAAD//wAAAgAAAAQAAAACAAAAAgADAAQAAAAAAAEAAgABAAcAAAABAAEAAgABAAcAAAACAAEAAgADAAcAAAD//wEAAgAAAAcAAAA=")
 tile_set = SubResource("TileSet_tjjr5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366490683]
-position = Vector2(15.5, 6)
+position = Vector2(15.5, 16)
 shape = SubResource("RectangleShape2D_3nhen")

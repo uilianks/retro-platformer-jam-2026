@@ -37,5 +37,10 @@ text = "Start"
 layout_mode = 2
 text = "Credits"
 
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=2079221416]
+layout_mode = 2
+text = "Quit"
+
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_2_pressed"]

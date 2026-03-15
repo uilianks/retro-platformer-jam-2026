@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ltapqmgwdkjf" path="res://common/stage/stage_setup.gd" id="1_45pb0"]
 [ext_resource type="Texture2D" uid="uid://cxpvlt82q4lhp" path="res://assets/tiles and background_foreground (new)/tileset.png" id="2_4j67g"]
 [ext_resource type="PackedScene" uid="uid://cfrpe2y6lr721" path="res://character/main_character/character.tscn" id="3_6ytyu"]
-[ext_resource type="Texture2D" uid="uid://4tngwtitxr8p" path="res://assets/blacknwhite_p=1_s=2.png" id="3_802n5"]
+[ext_resource type="Texture2D" uid="uid://4tngwtitxr8p" path="res://assets/tiles and background_foreground (new)/blacknwhite_p=1_s=2.png" id="3_802n5"]
 [ext_resource type="PackedScene" uid="uid://dpsrdr4dtmf3p" path="res://UI/coin_counter/ui_coin_counter.tscn" id="4_wy45p"]
 [ext_resource type="PackedScene" uid="uid://c4kytam7ipx7e" path="res://UI/space/ui_press_space.tscn" id="4_xtff1"]
 [ext_resource type="AudioStream" uid="uid://dm87iq5ys6446" path="res://assets/music/ost.wav" id="5_wy45p"]
@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dd5a6qjp7vb8f" path="res://environment/door/door.tscn" id="6_ykeq0"]
 [ext_resource type="PackedScene" uid="uid://drksqen6jrtkv" path="res://environment/plataform5x/plataform5x.tscn" id="8_1mxwh"]
 [ext_resource type="PackedScene" uid="uid://hjvxxiwtdmmp" path="res://environment/spike_plataform/spike_plataform.tscn" id="11_fv4vn"]
+[ext_resource type="PackedScene" uid="uid://dijehclyrqasn" path="res://stages/stage_5/stage_5.tscn" id="12_ykeq0"]
 [ext_resource type="PackedScene" uid="uid://dsfqogwqja5jo" path="res://environment/plataform0x/plataform0x.tscn" id="13_ykeq0"]
-[ext_resource type="PackedScene" uid="uid://bc3ehwo2ydeqw" path="res://stages/stage_2/stage_2.tscn" id="16_qy33w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45pil"]
 texture = ExtResource("2_4j67g")
@@ -376,7 +376,7 @@ position = Vector2(660, 320)
 
 [node name="Door" parent="Composition" unique_id=1041598118 instance=ExtResource("6_ykeq0")]
 position = Vector2(459, 157)
-next_stage = ExtResource("16_qy33w")
+next_stage = ExtResource("12_ykeq0")
 
 [node name="Plataform1x" parent="Composition" unique_id=912558507 instance=ExtResource("13_ykeq0")]
 position = Vector2(134, 137)
